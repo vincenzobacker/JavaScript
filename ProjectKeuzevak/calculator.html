@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang=nl>
+
+<head>
+    <meta charset=utf-8>
+    <meta name=description content="beschrijving">
+    <meta name=keybords content="trefwoorden, gescheiden, door, komma's">
+
+    <title>
+        JavaScript 2
+    </title>
+
+</head>
+
+<body>
+
+    <script>
+
+         function test() {
+
+             var getal1 = document.getElementById("getal1").value;
+             var getal2 = document.getElementById("getal2").value;
+
+             var antwoord = getal1 * getal2;
+
+             document.getElementById("antwoord").innerHTML = antwoord;
+
+         }
+
+
+    </script>
+
+        <input type="number" id="getal1">
+
+        <input type="number"  id="getal2">
+
+        <input type="button" value="bereken" onclick="test()">
+
+        <p id="antwoord"></p>
+
+</body>
+
+</html>

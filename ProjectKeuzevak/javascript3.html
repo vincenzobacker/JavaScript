@@ -1,0 +1,36 @@
+<DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+
+    </head>
+    <body>
+
+    <form action method="post" name="formulier" onsubmit="aanmelden()">
+        <input type="text" name="voornaam">
+        <input type="submit" value="aanmelden">
+    </form>
+    <script>
+
+        function aanmelden() {
+
+            var name = document.form["forumulier"]["voornaam"].value;
+
+            if(name = "0"){
+
+                document.write("er gaat iets fout");
+
+                return false;
+            }
+
+            if(name.length = <4){
+
+                document.write("er gaat iets fout");
+
+                return false;
+            }
+        }
+
+    </script>
+
+    </body>
+</html>

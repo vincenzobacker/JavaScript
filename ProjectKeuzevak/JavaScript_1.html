@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang=nl>
+
+<head>
+    <meta charset=utf-8>
+    <meta name=description content="beschrijving">
+    <meta name=keybords content="trefwoorden, gescheiden, door, komma's">
+
+    <title>
+        JavaScript 1
+    </title>
+
+</head>
+
+    <body>
+
+    <script>
+
+        function test() {
+
+            var naam;
+
+            naam = document.getElementById("knop").value;
+
+            document.write(naam);
+
+        }
+
+
+        function test2() {
+
+            var achternaam;
+
+            achternaam = document.getElementById("knop2").value;
+
+            document.write(achternaam);
+        }
+
+        function test3() {
+
+            var geboortedatum;
+
+            geboortedatum = document.getElementById("knop3").value;
+
+            document.write(geboortedatum);
+        }
+
+    </script>
+
+    <input type="button" value="Vincenzo" id="knop" onclick="test()">
+
+    <input type="button" value="Backer" id="knop2" onclick="test2()">
+
+    <input type="button" value="24/12/1998" id="knop3" onclick="test3()">
+
+    </body>
+
+</html>

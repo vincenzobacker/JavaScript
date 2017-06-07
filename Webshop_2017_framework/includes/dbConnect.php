@@ -1,0 +1,25 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: bar
+ * Date: 8-11-2015
+ * Time: 20:22
+ */
+
+$user = "root";
+$password = "";
+$host = "localhost";
+$database= "webshop2017";
+$table = "users";
+$query = "SELECT * from $table;";
+
+
+try {
+    $dbh = new PDO("mysql:host=$host;dbname=$database", $user, $password);
+    
+
+    // $dbh = null;
+} catch (PDOException $e) {
+    print "Error!: " . $e->getMessage() . "<br/>";
+    die();
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang=nl>
+
+<head>
+    <meta charset=utf-8>
+    <meta name=description content="beschrijving">
+    <meta name=keybords content="trefwoorden, gescheiden, door, komma's">
+
+    <title>
+        JavaScript 3
+    </title>
+
+</head>
+
+<body>
+
+    <script>
+
+      function rps(spelerskeuze) {
+
+          var computerkeuze = 'steen';
+
+          if(computerkeuze == spelerskeuze){
+
+              document.write("dit is gelijk");
+
+          }
+
+      }
+
+    </script>
+
+   <input type="button" onclick="rps('steen')" value="steen" id="steen">
+
+   <input type="button" onclick="rps('papier')" value="papier" id="papier">
+
+   <input type="button" onclick="rps('schaar')" value="schaar" id="schaar">
+
+</body>
+
+</html>
